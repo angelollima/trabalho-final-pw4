@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block titulo %}Cadastrar Usuário{% endblock %}
+
+{% block principal %}
+
+<div class="col-12">
+    <div class="row">
+        <div class="col-3 mb-4">
+            <img src="/static/img/produtos/{{produto.id}}.jpg" alt="{{produto.nome}}"
+                class="img-fluid rounded">
+        </div>
+        <div class="col-9 mb-4">
+            <h1>{{produto.nome}}</h1>
+            <h6 class="display-6">Por apenas</h6>
+            <h3 class="text-danger">R$ {{produto.valor}}</h3>
+            <hr>
+            <button class="btn btn-primary btn-lg">Comprar Agora!</button>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <p class="lead">Descrição:</p>
+    <p>{{produto.descricao}}</p>
+</div>
+
+{% endblock %}
